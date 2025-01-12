@@ -1,0 +1,10 @@
+The CSS rule `:nth-child(n+1)` will select *all* elements, not just the first element, as `n` starts at 0. To select only the first element, use `:nth-child(1)`. To select elements matching a more complex pattern, be precise with your `n` value in `:nth-child(an+b)`.
+
+```css
+div:nth-child(n+1) { /* This selects all divs */
+  color: blue;
+}
+div:nth-child(1) { /* This selects only the first div */
+  color: red;
+}
+```
