@@ -1,0 +1,15 @@
+To select only the first element, use `:nth-child(1)`.  For other selections, carefully construct your formula in `:nth-child(an+b)`.  Ensure you understand the starting value of `n` (0) and how `a` and `b` affect element selection.
+
+```css
+div:nth-child(1) { /* Correctly selects only the first div */
+  color: red;
+}
+
+div:nth-child(odd) { /* Selects odd-numbered divs */
+  background-color: lightblue;
+}
+
+div:nth-child(2n) { /* Selects even-numbered divs */
+  background-color: lightgreen;
+}
+```
